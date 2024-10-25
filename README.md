@@ -17,7 +17,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for considering contributing to PWDerby! All pull requests will be squashed and merged when approved.
+The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 
 ## Security Vulnerabilities
