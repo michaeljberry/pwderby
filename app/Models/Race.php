@@ -2,18 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Car extends Model
+class Race extends Model
 {
     use HasFactory;
 
-    public function racer(): BelongsTo
+    public function car(): BelongsToMany
     {
-        return $this->belongsTo(Racer::class);
+        return $this->belongsToMany(Car::class, 'races');
     }
 
     public function heat(): BelongsToMany
