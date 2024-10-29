@@ -10,17 +10,17 @@ class Race extends Model
 {
     use HasFactory;
 
-    public function car(): BelongsToMany
+    public function cars(): BelongsToMany
     {
         return $this->belongsToMany(Car::class, 'races');
     }
 
-    public function heat(): BelongsToMany
+    public function heats(): BelongsToMany
     {
         return $this->belongsToMany(Heat::class, 'races');
     }
 
-    public function lane(): BelongsToMany
+    public function lanes(): BelongsToMany
     {
         return $this->belongsToMany(Lane::class, 'races');
     }
