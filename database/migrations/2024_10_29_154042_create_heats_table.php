@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('number');
             $table->foreignId('round_id')
                 ->constrained()
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
             $table->timestamps();
         });
     }

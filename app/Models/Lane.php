@@ -10,12 +10,12 @@ class Lane extends Model
 {
     use HasFactory;
 
-    public function car(): BelongsToMany
+    public function cars(): BelongsToMany
     {
         return $this->belongsToMany(Car::class, 'races');
     }
 
-    public function heat(): BelongsToMany
+    public function heats(): BelongsToMany
     {
         return $this->belongsToMany(Heat::class, 'races');
     }
