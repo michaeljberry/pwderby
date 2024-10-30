@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Enums\AwardType;
+use App\Enums\AwardCategory;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -13,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('awards', function (Blueprint $table) {
             $table->id();
-            $table->enum('type', ['Certificate', 'Trophy', 'Verbal'])->default('Verbal');
-            $table->enum('category', ['Design', 'Speed', 'Other'])->default('Other');
+            $table->unsignedInteger('type')->default(AwardType::VERBAL->value);
+            $table->unsignedInteger('category')->default(AwardCategory::OTHER->value);
             $table->foreignId('group_id')
                 ->constrained()
                 ->nullOnUpdate()
