@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -451,
-    "scrollLeft": -619,
+    "scrollTop": 0,
+    "scrollLeft": -743,
     "zoomLevel": 0.81,
     "show": 431,
     "database": 16,
@@ -484,7 +484,7 @@
         "comment": "",
         "dataType": "boolean",
         "default": "true",
-        "options": 0,
+        "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 85,
@@ -493,7 +493,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1729711701183,
+          "updateAt": 1730304734094,
           "createAt": 1729711612342
         }
       },
@@ -823,8 +823,8 @@
         "name": "checked_in",
         "comment": "",
         "dataType": "boolean",
-        "default": "",
-        "options": 0,
+        "default": "false",
+        "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 67,
@@ -833,7 +833,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1729713438897,
+          "updateAt": 1730304735518,
           "createAt": 1729713433234
         }
       },
@@ -1264,7 +1264,7 @@
         "comment": "",
         "dataType": "",
         "default": "",
-        "options": 0,
+        "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
@@ -1273,7 +1273,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1729885602997,
+          "updateAt": 1730303147227,
           "createAt": 1729866071449
         }
       },
@@ -2104,7 +2104,8 @@
       {
         "name": 1729711692480,
         "dataType": 1729711696036,
-        "default": 1729711701183
+        "default": 1729711701183,
+        "options(notNull)": 1730304734094
       }
     ],
     "BNE2qlzr6QSRDnzdXy-YF": [
@@ -2302,7 +2303,9 @@
       -1,
       {
         "name": 1729713436234,
-        "dataType": 1729713438897
+        "dataType": 1729713438897,
+        "default": 1730304732448,
+        "options(notNull)": 1730304735518
       }
     ],
     "paqwf6Pz37OKeHyeaOzQn": [
@@ -2552,7 +2555,8 @@
       1729866071449,
       -1,
       {
-        "name": 1729885602996
+        "name": 1729885602996,
+        "options(notNull)": 1730303147226
       }
     ],
     "kCHJVdFFjeyGgkX1EHDH8": [

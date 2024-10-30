@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->boolean('trophy_eligible');
-            $table->boolean('checked_in');
+            $table->boolean('trophy_eligible')->default(true);
+            $table->boolean('checked_in')->default(false);
             $table->timestamps();
         });
     }

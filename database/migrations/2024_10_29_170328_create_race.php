@@ -19,8 +19,8 @@ return new class extends Migration
                 ->constrained();
             $table->foreignId('lane_id')
                 ->constrained();
-            $table->integer('time');
-            $table->integer('place');
+            $table->integer('time')->nullable();
+            $table->integer('place')->nullable();
             $table->timestamps();
         });
     }

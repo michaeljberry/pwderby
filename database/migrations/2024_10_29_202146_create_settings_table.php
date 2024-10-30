@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->boolean('timer_disconnected_warning');
-            $table->integer('track_length');
-            $table->enum('time_precision', ['0.001', '0.0001']);
-            $table->integer('previous_heat_linger_time');
+            $table->boolean('timer_disconnected_warning')->default(false);
+            $table->integer('track_length')->default(40);
+            $table->enum('time_precision', ['0.001', '0.0001'])->default('0.001');
+            $table->integer('previous_heat_linger_time')->default(10);
             $table->string('full_group_name')->default('Pack');
             $table->string('sub_group_name')->default('Den');
             $table->boolean('display_full_racer_name')->default(true);
