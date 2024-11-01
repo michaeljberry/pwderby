@@ -11,7 +11,7 @@ class Heat extends Model
 {
     use HasFactory;
 
-    public function rounds(): BelongsTo
+    public function round(): BelongsTo
     {
         return $this->belongsTo(Round::class);
     }

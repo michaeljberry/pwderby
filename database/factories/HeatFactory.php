@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Round;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,8 @@ class HeatFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'number' => fake()->randomNumber(),
+            'round_id' => Round::factory(),
         ];
     }
 }

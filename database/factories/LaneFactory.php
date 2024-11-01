@@ -17,7 +17,7 @@ class LaneFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'number' => fake()->randomNumber(),
         ];
     }
 }
