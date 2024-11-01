@@ -10,7 +10,7 @@ class Award extends Model
 {
     use HasFactory;
 
-    public function groups(): BelongsTo
+    public function group(): BelongsTo
     {
         return $this->belongsTo(Group::class);
     }

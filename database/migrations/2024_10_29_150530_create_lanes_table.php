@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('lanes', function (Blueprint $table) {
             $table->id();
             $table->integer('number');
-            $table->boolean('available_for_scheduling');
+            $table->boolean('available_for_scheduling')->default(true);
             $table->timestamps();
         });
     }

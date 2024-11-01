@@ -11,7 +11,7 @@ class Car extends Model
 {
     use HasFactory;
 
-    public function racers(): BelongsTo
+    public function racer(): BelongsTo
     {
         return $this->belongsTo(Racer::class);
     }
